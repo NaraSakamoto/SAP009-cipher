@@ -6,10 +6,10 @@ const commonAlphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N",
 
 function encode(offset, message){
   if(!offset || !message) throw new TypeError;
-  
+
   let encryptMessage = "";
 
-  for(let i = 0; i < message.length; i++){
+  for(let i = 0; i < message.length; i++){gi
     const letter = message[i];
     const index = indexOfLetter(letter, commonAlphabet)
     if(index === -1){
