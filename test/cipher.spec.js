@@ -79,6 +79,14 @@ describe('cipher', () => {
       expect(() => cipher.decode(0, 0)).toThrow(TypeError);
     });
 
+    it('should return "A" for "B" with offset 1', () => {
+      expect(cipher.decode(1, 'B')).toBe('A');
+    });
+
+    it('should return "Z" for "B" with offset 2', () => {
+      expect(cipher.decode(2, 'B')).toBe('Z');
+    });
+
     it('should return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "HIJKLMNOPQRSTUVWXYZABCDEFG" with offset 33', () => {
       expect(cipher.decode(33, 'HIJKLMNOPQRSTUVWXYZABCDEFG')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
     });
