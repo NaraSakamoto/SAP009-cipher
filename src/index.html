@@ -6,9 +6,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <header>
+      <h1>Caesar Cipher Translator</h1>
+    </header>
+    <main>
+      <form>
+        <section>
+          <p><label>Original Text:</label></p>
+          <textarea rows="4" cols="50"></textarea>
+        </section>
+        <section>
+          <label>Offset:</label>
+          <input type="number"></input>
+          <button type="button">Encode</button>
+        </section>
+        <section>
+          <label>Offset:</label>
+          <input type="number"></input>
+          <button type="button">Decode</button>
+        </section>
+        <section>
+          <p><label>Encoded Text:</label></p>
+          <textarea rows="4" cols="50"></textarea>
+        </section>
+      </form>
+      <footer>
+        <p>by Naroka</p>
+      </footer>
+    </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>
