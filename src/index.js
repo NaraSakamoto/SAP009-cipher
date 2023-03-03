@@ -1,3 +1,7 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
+document.getElementById("encodeBtn").addEventListener("click", encodeText);
+
+function encodeText(){
+    alert("Encode!!");
+}
