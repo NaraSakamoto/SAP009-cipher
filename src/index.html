@@ -10,24 +10,22 @@
       <h1>Caesar Cipher Translator</h1>
     </header>
     <main>
-      <form>
+      <form class="flex-container">
         <section>
-          <p><label>Original Text:</label></p>
-          <textarea rows="4" cols="50"></textarea>
+          <label for="textToEncode">Original Text:</label>
+          <textarea id="textToEncode" rows="4" cols="50"></textarea>
         </section>
         <section>
-          <label>Offset:</label>
-          <input type="number"></input>
+          <label for="encodeOffset">Offset:</label>
+          <input id="encodeOffset" type="number"></input>
           <button type="button">Encode</button>
-        </section>
-        <section>
-          <label>Offset:</label>
-          <input type="number"></input>
+          <label for="decodeOffset">Offset:</label>
+          <input id="decodeOffset" type="number"></input>
           <button type="button">Decode</button>
         </section>
         <section>
-          <p><label>Encoded Text:</label></p>
-          <textarea rows="4" cols="50"></textarea>
+          <label for="textToDecode">Encoded Text:</label>
+          <textarea id="textToDecode" rows="4" cols="50"></textarea>
         </section>
       </form>
       <footer>
