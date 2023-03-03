@@ -1,9 +1,35 @@
 .flex-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.flex-container > section {
+    margin: 10px;
+}
+
+.text-section {
+    flex-grow: 2;
+}
+
+.middle {
+    flex-grow: 0;
     align-items: center;
+}
+
+button {
+    width: 100%;
 }
 
 label {
     display: block;
+}
+
+footer {
+    text-align: right;
+}
+
+textarea {
+    width: 100%;
+    height: 80%;
 }

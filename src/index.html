@@ -11,24 +11,28 @@
     </header>
     <main>
       <section class="flex-container">
-        <section>
-          <label for="textToEncode">Original Text:</label>
-          <textarea id="textToEncode" rows="4" cols="50"></textarea>
+        <section class="text-section">
+            <label for="textToEncode">Original Text:</label>
+            <textarea id="textToEncode"></textarea>
         </section>
-        <section>
-          <label for="offset">Offset:</label>
-          <input id="offset" type="number">
-          <button id="encodeBtn" type="button">Encode</button>
-          <button id="decodeBtn" type="button">Decode</button>
+        <section class="middle">
+          <p>
+            <label for="offset">Offset:</label>
+            <input id="offset" type="number">
+          </p>
+          <p>
+            <button id="encodeBtn" type="button">Encode</button>
+          </p>
+          <p>
+            <button id="decodeBtn" type="button">Decode </button>
+          </p>
         </section>
-        <section>
-          <label for="textToDecode">Encoded Text:</label>
-          <textarea id="textToDecode" rows="4" cols="50"></textarea>
+        <section class="text-section">
+            <label for="textToDecode">Encoded Text:</label>
+            <textarea id="textToDecode"></textarea>
         </section>
       </section>
-      <footer>
-        <p>by Naroka</p>
-      </footer>
+      <footer>by Naroka</footer>
     </main>
     <script src="index.js" type="module"></script>
   </body>
