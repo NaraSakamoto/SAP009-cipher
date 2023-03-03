@@ -20,13 +20,13 @@ function encode(offset, message){
       encryptMessage += commonAlphabet[newIndex];
     }
   }
-
+  console.log(encryptMessage)
   return encryptMessage;
 }
 
 function indexOfLetter(letter, alphabet){
   for(let i = 0; i < alphabet.length; i++){
-    if(letter === alphabet[i]) return i;
+    if(letter.toUpperCase() === alphabet[i]) return i;
   }
   return -1;
 }
