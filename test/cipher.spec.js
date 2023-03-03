@@ -29,6 +29,10 @@ describe('cipher', () => {
       expect(cipher.encode(1, 'A')).toBe('B');
     });
 
+    it('should return "BCDEF" for "ABCDE" with offset 1', () => {
+      expect(cipher.encode(1, 'ABCDE')).toBe('BCDEF');
+    });
+
     it('should return "H" for "A" with offset 33', () => {
       expect(cipher.encode(33, 'A')).toBe('H');
     });

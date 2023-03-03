@@ -5,7 +5,7 @@ document.getElementById("decodeBtn").addEventListener("click", decode);
 
 function encode(){
   const textToEncode = document.getElementById("textToEncode").value;
-  const offset = document.getElementById("offset").value;
+  const offset = parseInt(document.getElementById("offset").value);
   
   document.getElementById("textToDecode").value = cipher.encode(offset, textToEncode);
 
@@ -14,7 +14,7 @@ function encode(){
 
 function decode(){
   const textToDecode = document.getElementById("textToDecode").value;
-  const offset = document.getElementById("offset").value;
+  const offset = parseInt(document.getElementById("offset").value);
     
   document.getElementById("textToEncode").value = cipher.decode(offset, textToDecode);
   
