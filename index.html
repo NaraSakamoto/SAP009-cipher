@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Caesar Cipher Translator</h1>
+    </header>
+    <main>
+      <section class="flex-container">
+        <section class="text-section">
+            <label for="textToEncode">Original Text:</label>
+            <textarea id="textToEncode"></textarea>
+        </section>
+        <section class="middle">
+          <p>
+            <label for="offset">Offset:</label>
+            <input id="offset" type="number">
+          </p>
+          <p>
+            <button id="encodeBtn" type="button">Encode</button>
+          </p>
+          <p>
+            <button id="decodeBtn" type="button">Decode </button>
+          </p>
+        </section>
+        <section class="text-section">
+            <label for="textToDecode">Encoded Text:</label>
+            <textarea id="textToDecode"></textarea>
+        </section>
+      </section>
+      <footer>by Naroka</footer>
+    </main>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
